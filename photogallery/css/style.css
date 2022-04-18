@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Serif+4:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.heading h2{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(29, 86, 136);
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 2.6rem
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.wrap {
+    overflow: hidden;
+    max-width: 1500px;
+    margin: 2rem 4rem;
+    padding: 0.8rem 0.8rem;
+    color:aliceblue;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+}
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    width: 90%;        
+}
+ .boxInner img { 
+  max-width: 100%;
+  max-height: 100%;
+  display: block; 
+    }
+
+button.deleteBtn:hover {
+  background-color: rgba(224, 230, 253, 0.76);
+  border: 0px;
+}
+button.deleteBtn {
+  cursor: pointer;
+  top: 1;
+  right: 0;
+  position: absolute;
+  padding: 4px 8px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff4d;
+  border: 0px;
+}
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
+}
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding: 10px 0;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-family: serif;
+    cursor: pointer;
+  }
+  
+  ul li {
+    list-style-type: none;
+    margin: 0 1rem;
+    display: inline-block;
+  }
+  
+  ul li a,.displayName {
+    text-decoration: none;
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 20px;
+    font-weight: 400 ;
+    color: rgb(12, 49, 83);
+    position: relative;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+body,html{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Source Sans Pro" sans-serif;
+}
+.plus{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    color: #ffffff;
+    background: rgb(12, 49, 83);
+    border-radius: 50%;
+    border: none;
+    transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+}
+.plus:after{
+    content: "+";
+    font-size: 2.9em;
+    line-height: 0.9em;
+}
+.titleBox{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1.2rem;
+    color:aliceblue;
+}
+
+.modal1 {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(8, 8, 8);
+    background-color: rgba(8, 8, 8, 0.9); 
+  }
+  .modal-content-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  #captiontext {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color:aliceblue;
+    padding: 12px 0;
+    height: 152px;
+  }
+  .modal-content-img, #captiontext {
+    animation-name: zoom;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .closebut {
+    position: absolute;
+    top: 15px;
+    right: 33px;
+    color:aliceblue;
+    font-size: 38px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  .closebut:hover,
+  .closebut:focus {
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+.titleBox{
+    color: white;
+}
+.aboutText{
+  margin: 3rem 13rem;
+  padding: 4rem 6rem;
+  text-align: center;
+  color: aliceblue;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  font-size: 22px;
+}
